@@ -2,6 +2,8 @@
 
 Example of client web using a redirection.
 
+[Go to the demo](https://10darts.github.io/web-subscription-sample/)
+
 We add at the bottom of the page the code to show the modal:
 
 ```html
