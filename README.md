@@ -1,4 +1,4 @@
-# web-subscription-sample
+# publisher-sample
 
 Example of client web using a redirection.
 
