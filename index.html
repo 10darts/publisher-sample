@@ -26,6 +26,7 @@
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
     <!-- Theme Style -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="modal.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -2116,21 +2117,32 @@
 
     <!-- modal -->
     <div class="modal fade" tabindex="-1" role="dialog" id="modalSubscription">
-        <div class="modal-dialog" role="document" style="margin-top: 0">
-            <div class="modal-content" style="border-radius: 0;">
+        <div class="modal-dialog" role="document" style="margin-top: 0; width: 400px">
+            <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Hola!</h4>
+                    <h4 class="modal-title text-center">
+                        ¿Deseas recibir las últimas novedades en tu navegador?
+                    </h4>
                 </div>
-                <div class="modal-body">
-                    <p style="font-size: 16px; line-height: 1.6;">
-                        ¿Quieres recibir notificaciones con ofertas comerciales sobre los productos que más te interesen?
-                    </p>
-                </div>
+
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        No, gracias
-                    </button>
-                    <a href="https://10darts.github.io/web-subscription-sample/?from=publisher1" class="btn btn-primary">Permitir</a>
+                    <a type="button" class="btn btn-default" data-dismiss="modal">
+                        No gracias
+                    </a>
+                    <!-- <a href="https://10darts.github.io/web-subscription-sample/?from=publisher1" target="_blank" class="btn btn-primary">
+                        Sí quiero
+                    </a> -->
+
+                    <script type="text/javascript">
+                        function newPopup(url) {
+                            popupWindow = window.open(
+                                url, 'popUpWindow', 'height=600,width=600,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+                        }
+                    </script>
+                    <a href="JavaScript:newPopup('https://10darts.github.io/web-subscription-sample/?from=publisher1');" class="btn btn-primary"
+                        id="btn-accept">
+                        Sí quiero
+                    </a>
                 </div>
             </div>
         </div>
@@ -2139,6 +2151,9 @@
 
     <script type="text/javascript">
         $('#modalSubscription').modal();
+        $("#btn-accept").on('click', function () {
+            $('#modalSubscription').modal('hide');
+        });
     </script>
 </body>
 

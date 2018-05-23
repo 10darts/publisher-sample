@@ -6,7 +6,7 @@
   "author": "Salvador Marí <salvador@10darts.com>",
   "license": "MIT",
   "scripts": {
-    "start": "http-server technews"
+    "start": "http-server"
   },
   "devDependencies": {
     "http-server": "^0.11.1"

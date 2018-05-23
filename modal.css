@@ -1,0 +1,341 @@
+/*******************************
+* MD DIALOG - MATERIAL DESIGN
+* Add "modal-sm" after "modal-dialog" class for smaller dialog.
+*******************************/
+/* ----- IMPORT ROBOTO FONT FOR MD ----- */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100);
+
+/* ----- DIALOG/MODAL ----- */
+/* FADE/SCALE EFFECT */
+.modal.fade .modal-dialog {
+  opacity: 0;
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -o-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.modal.fade.in .modal-dialog {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+/* DIALOG CONTENT */
+.modal-content {
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22),
+    0 27px 24px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22),
+    0 27px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22), 0 27px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* DIALOG HEADER */
+.modal-header {
+  min-height: 16px;
+  padding: 24px;
+  border-bottom: none;
+  text-transform: uppercase;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 21px;
+}
+
+/* DIALOG BODY */
+.modal-body {
+  padding: 0 24px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.45em;
+}
+
+.modal-body p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+}
+
+.modal-body .lead {
+  font-weight: 300;
+  font-size: 16px;
+  color: #757575;
+}
+
+.modal-body p:last-child,
+.modal-body .lead:last-child {
+  margin-bottom: 0;
+}
+
+/* DIALOG FOOTER */
+.modal-footer {
+  padding: 0;
+  padding-bottom: 16px;
+  border-top: none;
+  text-align: center;
+}
+
+/* .modal-footer .btn {
+  height: 36px;
+  margin-right: 8px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+} */
+
+.modal-footer .btn.btn-primary {
+  backface-visibility: visible;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #5a95f5;
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  bottom: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+  box-sizing: border-box;
+  clear: none;
+  clip: auto;
+  color: rgb(255, 255, 255);
+  column-count: auto;
+  column-gap: normal;
+  column-rule-color: rgb(0, 0, 0);
+  column-rule-style: none;
+  column-rule-width: 0px;
+  column-span: none;
+  column-width: auto;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: pointer;
+  direction: ltr;
+  display: inline-block;
+  filter: none;
+  float: none;
+  font-family: Roboto, Noto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-feature-settings: normal;
+  font-size: 12.6px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 400;
+  height: 37.9688px;
+  hyphens: manual;
+  left: auto;
+  letter-spacing: 0.63px;
+  line-height: 18.9px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: disc;
+  margin: auto;
+  max-height: none;
+  max-width: none;
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 1;
+  outline-color: rgb(255, 255, 255);
+  outline-style: none;
+  outline-width: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-bottom: 8.9964px;
+  padding-left: 25.2px;
+  padding-right: 25.2px;
+  padding-top: 8.9964px;
+  perspective: none;
+  perspective-origin: 60.4062px 18.9844px;
+  position: static;
+  quotes: '' '';
+  right: auto;
+  table-layout: auto;
+  text-align: center;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+  top: auto;
+  transform: none;
+  transform-origin: 60.4062px 18.9844px;
+  transform-style: flat;
+  transition-delay: 0s;
+  transition-duration: 0.075s;
+  transition-property: background-color;
+  transition-timing-function: ease;
+  unicode-bidi: normal;
+  user-select: none;
+  vertical-align: middle;
+  visibility: visible;
+  white-space: nowrap;
+  width: 120.828px;
+  word-break: normal;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  z-index: auto;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: auto;
+  -webkit-border-image: none;
+}
+
+.modal-footer .btn.btn-default {
+  backface-visibility: visible;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: border-box;
+  clear: none;
+  clip: auto;
+  color: rgb(0, 0, 0);
+  column-count: auto;
+  column-gap: normal;
+  column-rule-color: rgb(0, 0, 0);
+  column-rule-style: none;
+  column-rule-width: 0px;
+  column-span: none;
+  column-width: auto;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: pointer;
+  direction: ltr;
+  display: inline-block;
+  filter: none;
+  float: none;
+  font-family: Roboto, Noto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-feature-settings: normal;
+  font-size: 12.6px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 400;
+  height: 37.9688px;
+  hyphens: manual;
+  left: auto;
+  letter-spacing: 0.63px;
+  line-height: 18.9px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: disc;
+  margin: auto;
+  max-height: none;
+  max-width: none;
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 1;
+  outline-color: rgb(0, 0, 0);
+  outline-style: none;
+  outline-width: 0px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-bottom: 8.9964px;
+  padding-left: 25.2px;
+  padding-right: 25.2px;
+  padding-top: 8.9964px;
+  perspective: none;
+  perspective-origin: 67.9531px 18.9844px;
+  position: static;
+  quotes: '' '';
+  right: auto;
+  table-layout: auto;
+  text-align: center;
+  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+  top: auto;
+  transform: none;
+  transform-origin: 67.9531px 18.9844px;
+  transform-style: flat;
+  transition-delay: 0s;
+  transition-duration: 0.075s;
+  transition-property: background-color;
+  transition-timing-function: ease;
+  unicode-bidi: normal;
+  user-select: none;
+  vertical-align: middle;
+  visibility: visible;
+  white-space: nowrap;
+  width: 135.906px;
+  word-break: normal;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  z-index: auto;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: auto;
+  -webkit-border-image: none;
+}
