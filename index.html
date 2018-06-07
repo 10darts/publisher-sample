@@ -2126,7 +2126,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <a type="button" class="btn btn-default" data-dismiss="modal">
+                    <a type="button" class="btn btn-default" id="btn-cancel">
                         No gracias
                     </a>
                     <!-- <a href="https://10darts.github.io/web-subscription-sample/?from=publisher1" target="_blank" class="btn btn-primary">
@@ -2149,11 +2149,20 @@
     </div>
     <!-- /.modal -->
 
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
     <script type="text/javascript">
-        $('#modalSubscription').modal();
-        $("#btn-accept").on('click', function () {
-            $('#modalSubscription').modal('hide');
-        });
+        if (!Cookies.get('modalSubscription')) {
+            $('#modalSubscription').modal();
+            $("#btn-accept").on('click', function () {
+                $('#modalSubscription').modal('hide');
+                Cookies.set('modalSubscription', 'hide');
+            });
+            $("#btn-cancel").on('click', function () {
+                $('#modalSubscription').modal('hide');
+                Cookies.set('modalSubscription', 'hide');
+            });
+        }
     </script>
 </body>
 
